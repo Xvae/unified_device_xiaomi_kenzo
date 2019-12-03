@@ -558,6 +558,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.hdmi.mirror.enable=true \
 	persist.sys.wfd.virtual=0
 
+# USB debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
+	
 # Enable missing props
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true \
