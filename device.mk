@@ -588,3 +588,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
+#HALS
+PRODUCT_SOONG_NAMESPACES += \
+hardware/qcom/audio \
+hardware/qcom/media \
+hardware/qcom/display
