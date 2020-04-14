@@ -292,3 +292,8 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # inherit from the proprietary version
 -include vendor/xiaomi/kenzo/BoardConfigVendor.mk
+
+#CAF
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8952
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8952
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8952
