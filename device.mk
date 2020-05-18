@@ -582,6 +582,10 @@ PRODUCT_ODM_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=0
 
+# Pixel identification
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.build.fingerprint=google/flame/flame:10/QQ2A.200501.001.A3/6353761:user/release-keys
+
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
