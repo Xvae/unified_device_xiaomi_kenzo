@@ -313,6 +313,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
     libbase_shim \
     ims-ext-common \
+    ims_ext_common.xml \
     ims-ext-common_system
 
 PRODUCT_BOOT_JARS += \
