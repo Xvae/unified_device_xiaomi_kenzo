@@ -522,6 +522,10 @@
     -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
 
+     <!-- Sets the package name for device parts-->
+    <string name="config_device_parts_package_name" translatable="false">com.magicxavi.settings.device</string>
+    <string name="config_device_parts_package_activity" translatable="false">com.magicxavi.settings.device.DeviceSettingsActivity</string>
+
 </resources>
 
 
