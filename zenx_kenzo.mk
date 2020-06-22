@@ -24,6 +24,10 @@ $(call inherit-product, device/xiaomi/kenzo/device.mk)
 $(call inherit-product, vendor/zenx/config/common_full_phone.mk)
 
 
+PRODUCT_PACKAGES += \
+    CameraGo \
+    GalleryGoPrebuilt
+
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
