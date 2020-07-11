@@ -584,7 +584,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Pixel identification
 PRODUCT_PRODUCT_PROPERTIES += \
-ro.build.fingerprint=google/flame/flame:10/QQ2A.200501.001.A3/6353761:user/release-keys
+ro.build.fingerprint=google/flame/flame:10/QQ3A.200705.002/6506677:user/release-keys
 
 # XiaomiParts
 PRODUCT_PACKAGES += \
