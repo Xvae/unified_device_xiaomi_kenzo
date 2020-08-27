@@ -19,6 +19,13 @@
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 
+# USB debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1 
+
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/kenzo/kenzo-vendor.mk)
 
