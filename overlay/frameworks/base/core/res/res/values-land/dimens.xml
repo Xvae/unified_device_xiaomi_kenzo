@@ -19,5 +19,5 @@
 
 <resources>
     <!-- Total height of QQS in landscape, this is effectively status_bar_height_landscape + 128 -->
-    <dimen name="quick_qs_total_height">152dp</dimen>
+    <dimen name="quick_qs_total_height">142dp</dimen>
 </resources>

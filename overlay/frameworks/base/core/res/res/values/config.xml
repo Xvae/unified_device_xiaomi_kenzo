@@ -523,8 +523,8 @@
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
 
      <!-- Sets the package name for device parts-->
-    <string name="config_device_parts_package_name" translatable="false">com.magicxavi.settings.device</string>
-    <string name="config_device_parts_package_activity" translatable="false">com.magicxavi.settings.device.DeviceSettingsActivity</string>
+    <string name="config_device_parts_package_name" translatable="false">com.xiaomi.parts</string>
+    <string name="config_device_parts_package_activity" translatable="false">com.xiaomi.parts.DeviceSettingsActivity</string>
 
     <!-- Sets the paths that are needed for SystemInfo-->
     <string name="config_cpu_temp_path" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
