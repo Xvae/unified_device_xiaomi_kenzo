@@ -20,15 +20,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from kipper device
 $(call inherit-product, device/xiaomi/kenzo/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/common.mk)
-
+# Inherit some common ResurrectionRemix stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORT := true
 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := kenzo
-PRODUCT_NAME := aosp_kenzo
+PRODUCT_NAME := rr_kenzo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
 TARGET_VENDOR := Xiaomi
