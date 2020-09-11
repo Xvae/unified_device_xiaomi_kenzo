@@ -16,8 +16,9 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
+DEVICE_PACKAGE_OVERLAYS += \
+	$(LOCAL_PATH)/overlay \
+	$(LOCAL_PATH)/overlay-rr
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/kenzo/kenzo-vendor.mk)
