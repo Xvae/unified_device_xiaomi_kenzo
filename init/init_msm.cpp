@@ -28,8 +28,12 @@
 #include <sys/sysinfo.h>
 
 #include "property_service.h"
+#define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
+#include <sys/_system_properties.h>
 
-using android::init::property_set;
+int property_set(const char *key, const char *value) {
+    return __system_property_set(key, value);
+}
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
