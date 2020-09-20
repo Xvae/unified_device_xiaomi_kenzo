@@ -324,9 +324,6 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims-ext-common_system
 
-PRODUCT_BOOT_JARS += \
-    ims-ext-common_system
-
 # IPA Manager
 #PRODUCT_PACKAGES += \
 #    ipacm \
@@ -447,9 +444,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Seccomp policy
