@@ -40,13 +40,16 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno510
 
 TARGET_USES_64_BIT_BINDER := true
 
-BUILD_BROKEN_PHONY_TARGETS := true
-
 ENABLE_CPUSETS := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8952
 TARGET_NO_BOOTLOADER := true
+
+# Broken R
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 ramoops_memreserve=4M
