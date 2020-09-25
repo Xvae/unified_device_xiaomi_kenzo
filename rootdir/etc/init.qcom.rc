@@ -257,6 +257,11 @@ on post-fs
 
 # msm specific files that need to be created on /data
 on post-fs-data
+
+    # Clear existing log and start the service
+    rm /cache/boot_log.txt
+    start logger
+
     # Goodix
     mkdir /data/goodix 0700 system system
     
@@ -485,6 +490,13 @@ on post-fs-data
 
     # Enable hvdcp
     setprop persist.hvdcp.allow_opti 1
+	
+service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
     
 service vendor.qseecomd /system/vendor/bin/qseecomd
     class core
@@ -508,6 +520,9 @@ on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
 
+    # Stop the logger service
+    stop logger
+	
 on property:vold.decrypt=trigger_restart_framework
     restart vendor.camera-provider-2-4
     start vendor.wcnss-service
