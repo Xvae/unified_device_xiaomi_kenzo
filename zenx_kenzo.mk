@@ -22,7 +22,8 @@ $(call inherit-product, device/xiaomi/kenzo/device.mk)
 
 # Inherit some common ZenX-OS stuff.
 $(call inherit-product, vendor/zenx/config/common_full_phone.mk)
-
+TARGET_LAUNCHER_CHOICE := pixel
+ZENX_BUILD_TYPE := Official
 
 PRODUCT_PACKAGES += \
     CameraGo \
