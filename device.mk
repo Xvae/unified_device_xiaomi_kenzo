@@ -590,3 +590,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
+# DumpState
+PRODUCT_PACKAGES += \
+    android.hardware.dumpstate@1.1-service-kenzo
