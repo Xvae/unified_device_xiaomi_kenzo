@@ -22,6 +22,8 @@ ALLOW_MISSING_DEPENDENCIES := true
 
 # We still use copy headers.
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -37,7 +39,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53.a57
 
 TARGET_CPU_CORTEX_A53 := true
-BUILD_BROKEN_PREBUILT_ELF_FILES := true
+
 
 TARGET_BOARD_PLATFORM := msm8952
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno510
@@ -262,8 +264,6 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
 
 # Enable DRM plugins 64 bit compilation
 TARGET_ENABLE_MEDIADRM_64 := true
-
-BUILD_BROKEN_DUP_RULES := true
 
 TARGET_FLATTEN_APEX := true
 
