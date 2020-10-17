@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_kenzo.mk
+    $(LOCAL_DIR)/conquer_kenzo.mk
 
 COMMON_LUNCH_CHOICES := \
     conquer_kenzo-userdebug \
