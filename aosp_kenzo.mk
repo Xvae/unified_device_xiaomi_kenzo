@@ -22,7 +22,9 @@ $(call inherit-product, device/xiaomi/kenzo/device.mk)
 
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/common.mk)
-
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+IS_PHONE := true
 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
@@ -32,7 +34,6 @@ PRODUCT_NAME := aosp_kenzo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
 TARGET_VENDOR := Xiaomi
-
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
