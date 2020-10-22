@@ -1,0 +1,12 @@
+[
+ {
+ "repository": "HornbillOS-Devices/device_xiaomi_kenzo", "target_path": 
+"device/xiaomi/kenzo", "branch": "ten", "remote": "github"
+},
+{ "repository": "ikeh045/vendor_xiaomi_kenzo", "target_path": 
+"vendor/xiaomi/kenzo", "branch": "ten", "remote": "gitlab"
+},
+ { "repository": "ikeh045/kernel_xiaomi_msm8956", "target_path": 
+"kernel/xiaomi/msm8956", "branch": "ten", "remote": "github"
+ },
+ {
